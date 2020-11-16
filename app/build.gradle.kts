@@ -1,7 +1,8 @@
 plugins {
     id(BuildPlugins.androidApplication)
-    id(BuildPlugins.kotlinAndroid)
-    id(BuildPlugins.kotlinKapt)
+    kotlin(BuildPlugins.android)
+    kotlin(BuildPlugins.kapt)
+    kotlin(BuildPlugins.serialization) version Version.kotlin
 }
 
 android {
@@ -51,7 +52,14 @@ dependencies {
     implementation(Libraries.roomRuntime)
     kapt(Libraries.roomCompiler)
 
+    implementation(Libraries.serialization)
+    implementation(Libraries.serializationJson)
+
     testImplementation(TestLibraries.junit)
+    testImplementation(TestLibraries.junitJupiter)
+    testImplementation(TestLibraries.truth)
+    testImplementation(TestLibraries.truthExt)
+
     androidTestImplementation(TestLibraries.androidJunitExt)
     androidTestImplementation(TestLibraries.espresso)
 

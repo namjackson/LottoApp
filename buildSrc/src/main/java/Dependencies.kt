@@ -19,6 +19,7 @@ object Version {
     const val room = "2.2.5"
     const val lifecycle = "2.2.0"
     const val navigation = "2.3.1"
+    const val serialization = "1.0.1"
 }
 
 object ProjectDependencies {
@@ -28,8 +29,9 @@ object ProjectDependencies {
 
 object BuildPlugins {
     const val androidApplication = "com.android.application"
-    const val kotlinAndroid = "kotlin-android"
-    const val kotlinKapt = "kotlin-kapt"
+    const val android = "android"
+    const val kapt = "kapt"
+    const val serialization ="plugin.serialization"
 }
 
 object Libraries {
@@ -50,6 +52,9 @@ object Libraries {
     const val roomRuntime = "androidx.room:room-runtime:${Version.room}"
     const val roomCompiler = "androidx.room:room-compiler:${Version.room}"
     const val roomKtx = "androidx.room:room-ktx:${Version.room}"
+
+    const val serialization = "org.jetbrains.kotlinx:kotlinx-serialization-core:${Version.serialization}"
+    const val serializationJson = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Version.serialization}"
 }
 
 object TestLibraries {
@@ -57,6 +62,7 @@ object TestLibraries {
         const val junit = "4.13.1"
         const val androidJunit = "1.1.2"
         const val espresso = "3.3.0"
+        const val junitJupiter = "5.7.0"
     }
 
     const val roomTest = "androidx.room:room-testing:${Version.room}"
@@ -64,4 +70,10 @@ object TestLibraries {
     const val junit = "junit:junit:${Versions.junit}"
     const val androidJunitExt = "androidx.test.ext:junit:${Versions.androidJunit}"
     const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
+
+    const val truth = "com.google.truth:truth:1.1"
+    const val truthExt = "androidx.test.ext:truth:1.3.0"
+
+
+    const val junitJupiter = "org.junit.jupiter:junit-jupiter:${Versions.junitJupiter}"
 }
