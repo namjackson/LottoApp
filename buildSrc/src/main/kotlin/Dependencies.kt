@@ -77,3 +77,13 @@ object TestLibraries {
 
     const val junitJupiter = "org.junit.jupiter:junit-jupiter:${Versions.junitJupiter}"
 }
+
+
+
+
+
+
+
+//    const val junitJupiterApi = "org.junit.jupiter:junit-jupiter-api:${Versions.junitJupiter}"
+//    const val junitJupiterEngine = "org.junit.jupiter:junit-jupiter-engine:${Versions.junitJupiter}"
+//    const val junitJupiterParams = "org.junit.jupiter:junit-jupiter-params:${Versions.junitJupiter}"

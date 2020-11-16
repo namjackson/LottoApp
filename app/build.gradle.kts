@@ -4,6 +4,7 @@ plugins {
     kotlin(BuildPlugins.kapt)
     kotlin(BuildPlugins.serialization) version Version.kotlin
 }
+apply(from = "../jacoco.gradle")
 
 android {
     compileSdkVersion(AndroidSdk.compileSdk)
