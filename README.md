@@ -1,5 +1,6 @@
 # LottoApp
 
+![CI](https://github.com/namjackson/LottoApp/workflows/CI/badge.svg?branch=master)
 
 ## 테스트 스터디를 위한 프로젝트
 
